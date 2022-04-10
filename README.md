@@ -1,4 +1,5 @@
 # Hey
 
 <!--START_SECTION:waka-->
+SHOW_PROFILE_VIEWS
 <!--END_SECTION:waka-->

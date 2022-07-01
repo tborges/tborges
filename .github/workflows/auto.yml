@@ -30,6 +30,8 @@ jobs:
       run: git commit -m "========== TB Auto updating TODO.txt"
     - name: fetch from main
       run: git fetch origin main
+    - name: remote from main
+      run: git remote add origin https://github.com/tborges/tborges
     - name: push code to main
       # run: git push origin main
       run: git push origin HEAD:main 

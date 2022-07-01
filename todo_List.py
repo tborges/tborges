@@ -4,18 +4,16 @@ If found, it copies/writes the line to a TODO.txt file.
 Step 1: Write some python so I can give a specific location to look through.
 Step 2: Loop through all the files/folders in that location.
 Step 3: copy each line with a #TODO to a TODO.txt
-
-
 '''
 
 import os
 import datetime
 
 # Pathway to folder I want to look through.
-rootdir = '/Users/pao-de-queijo/Documents/GitHub/tborges'
+rootdir = os.getcwd()
 
 # Pathway to file that is collecting the TODO list.
-text_file_location = '/Users/pao-de-queijo/Documents/GitHub/tborges/TODO.txt'
+text_file_location = rootdir + "/TODO.txt"
 
 # Opens and writes the TODO.txt file.
 TODO_file = open(text_file_location, 'w')

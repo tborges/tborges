@@ -7,7 +7,7 @@ console.log("HELLLLOOOO")
 function doc(timeStamp) {
     array.push(timeStamp)
     console.log("im watching you")
-    document.getElementById('hello').innerHTML = array
+    // document.getElementById('hello').innerHTML = array
     return array
 }
 doc(showMe)

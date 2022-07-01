@@ -1,13 +1,11 @@
-name: UpdateTODO
+
+name: AUTO
 
 on:
   schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '0 0 1 1 *' 
-    
-# on:
-#   [push]
-
+    # Runs at 12am IST
+    - cron: '30 18 * * *'
+  workflow_dispatch:
 
 jobs:
   build:

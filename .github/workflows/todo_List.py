@@ -13,7 +13,7 @@ import datetime
 rootdir = os.getcwd()
 
 # Pathway to file that is collecting the TODO list.
-text_file_location = rootdir + "/TODO.txt"
+text_file_location = rootdir + "./TODO.txt"
 
 # Opens and writes the TODO.txt file.
 TODO_file = open(text_file_location, 'w')

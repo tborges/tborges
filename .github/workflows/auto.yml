@@ -20,8 +20,8 @@ jobs:
       run: ls
     - name: Run a one-line script
       run: python ./todo_List.py
-    # - name: switching from HTTPS to SSH
-    #   run: git remote set-url origin ${{ secrets.ssh }}
+    - name: switching from HTTPS to SSH
+      run: git remote set-url origin ${{ secrets.GH_TOKEN }}
     - name: check for changes
       run: git status
     - name: stage changed files

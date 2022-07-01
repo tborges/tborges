@@ -19,7 +19,7 @@ jobs:
     - name: Run check of what's in pwd
       run: ls
     - name: Run a one-line script
-      run: python ./todo_List.py
+      run: python3 ./todo_List.py
     - name: switching from HTTPS to SSH
       run: git remote set-url origin ${{ secrets.GH_TOKEN }}
     - name: check for changes

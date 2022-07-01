@@ -39,6 +39,7 @@ for subdir, dirs, files in os.walk(rootdir):
                         # The line is stripped and pasted in the TODO.txt file.
                         line = line.strip()
                         
+                        TODO_file.write(line + "\n" + "\n")
                         TODO_file.write("File Name: " + file + "\n")
                         TODO_file.write("Line Number: " + str(line_counter) + "\n")
                         TODO_file.write(line + "\n" + "\n")
